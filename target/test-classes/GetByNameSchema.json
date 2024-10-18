@@ -1,0 +1,44 @@
+{     
+  "type": "array",
+  "properties": {
+    "user_first_name": {
+      "type": ["string", "null"]
+    },
+    "user_last_name": {
+      "type": ["string", "null"]
+    },
+    "user_contact_number": {
+      "type": ["integer", "null"]
+    },
+    "user_email_id": {
+      "type": ["string", "null"]
+    },
+    "userAddress": {
+      "type": "object",
+      "properties": {
+        "plotNumber": {
+          "type": ["string", "null"]
+        },
+        "street": {
+          "type": ["string", "null"]
+        },
+        "state": {
+          "type": ["string", "null"]
+        },
+        "country": {
+          "type": ["string", "null"]
+        },
+        "zipCode": {
+          "type": ["integer", "null"]
+        }
+      },
+      "required": [
+        "plotNumber",
+        "street",
+        "state",
+        "country",
+        "zipCode"
+      ]
+    }
+
+}
